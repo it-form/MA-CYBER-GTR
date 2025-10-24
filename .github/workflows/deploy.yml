@@ -20,7 +20,7 @@ jobs:
           target: "/var/www/app"
       - name: Met en place nginx
         uses: appleboy/ssh-action@v1.2.0
-          with:
+        with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH-PVT-KEY }}
